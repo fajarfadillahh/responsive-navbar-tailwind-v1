@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar Using Tailwind</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+
+    <!-- Box Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container mx-auto w-full relative top-0 left-0 z-50 px-4">
+      <nav
+        class="flex justify-between items-center py-4 border-b border-gray-100 md:py-8 md:border-none"
+      >
+        <!-- logo -->
+        <a href="#" class="nav__logo">Fajar Fadillah</a>
+
+        <!-- nav toggle -->
+        <div
+          class="nav__toggle text-2xl cursor-pointer md:hidden"
+          id="nav-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <!-- menu -->
+        <div
+          class="nav__menu fixed top-0 -right-full w-3/5 h-full pt-14 px-6 bg-yellow-300 transition-all duration-300 md:relative md:top-auto md:right-0 md:w-auto md:h-auto md:pt-0 md:px-0 md:bg-transparent"
+          id="nav-menu"
+        >
+          <div
+            class="nav__close absolute top-3 right-6 cursor-pointer text-2xl md:hidden"
+            id="nav-close"
+          >
+            <i class="bx bx-x"></i>
+          </div>
+
+          <ul class="nav__list text-center md:flex">
+            <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-12">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-12">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-12">
+              <a href="#" class="nav__link">Promo</a>
+            </li>
+            <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-12">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Javascript -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
